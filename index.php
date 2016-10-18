@@ -7,8 +7,8 @@ error_reporting(E_ALL);
 
 define("INCLUDE_PATH", "../../twc_includes");
 
-$page_title="My Form Title YO!";
-$page_info="This form uses Bootstrap and Ajax to call a php script...";
+$page_title="Form Title";
+$page_info="This form uses Bootstrap for the CSS and Ajax to call a PHP script...";
 $page_label="This is the Input Label";
 
 ?>
