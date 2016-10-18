@@ -75,6 +75,9 @@ $page_label="This is the Input Label";
         </div>            
         <input type="submit" class="btn btn-default" value="Submit" id="submit">
     </form>
+    <p><a href="https://github.com/pwingard/formajaxphpcall">Git</a>&nbsp;&middot;&nbsp;
+      <a href="https://www.linkedin.com/in/pwingard">LinkedIn</a>&nbsp;&middot;&nbsp;
+        <a href="http://pwingard.com">Home</a></p>
 </div>    
     
     
