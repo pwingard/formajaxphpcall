@@ -16,6 +16,7 @@ $page_label="This is the Input Label";
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="shortcut icon" href="images/fave.ico" type="image/x-icon">
         <link rel="icon" type="image/png" href="../images/fave.ico"/>
 	<link rel="stylesheet" href="<?php echo INCLUDE_PATH;?>/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="<?php echo INCLUDE_PATH;?>/js/jquery-ui-1.11.2/jquery-ui.min.css"/>
