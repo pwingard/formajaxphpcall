@@ -1,4 +1,4 @@
-//http://pwingard.com/parts/ajaxform/
+
     $(document).ready(function(){
         $("#submit").show('fast');
         $("#submit").click(function () {
@@ -25,6 +25,18 @@
         return false;
         });
     });
+
+$("#form_input")
+  .focus(function() {
+        if (this.value === this.defaultValue) {
+            this.value = '';
+        }
+  })
+  .blur(function() {
+        if (this.value === '') {
+            this.value = this.defaultValue;
+        }
+});
 
  
 

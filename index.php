@@ -1,5 +1,5 @@
 <?php
-//http://pwingard.com/ajaxexamples/formajaxphpcall
+//http://pwingard.com/dev/ajaxexamples/formajaxphpcall
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
