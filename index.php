@@ -7,9 +7,9 @@ error_reporting(E_ALL);
 
 define("INCLUDE_PATH", "../../twc_includes");
 
-$page_title="Form Title";
+$page_title="Form Using Ajax to Call a PHP Script";
 $page_info="This form uses Bootstrap for the CSS and Ajax to call a PHP script...";
-$page_label="This is the Input Label";
+$page_label="Input";
 
 ?>
 
@@ -20,7 +20,6 @@ $page_label="This is the Input Label";
         <link rel="icon" type="image/png" href="../images/fave.ico"/>
 	<link rel="stylesheet" href="<?php echo INCLUDE_PATH;?>/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="<?php echo INCLUDE_PATH;?>/js/jquery-ui-1.11.2/jquery-ui.min.css"/>
-	<!--<link rel="stylesheet" href="css/app.css"/>-->
 	<script type='text/javascript' src='<?php echo INCLUDE_PATH;?>/js/jquery-1.11.1.min.js'></script>
 	<script type='text/javascript' src='<?php echo INCLUDE_PATH;?>/js/bootstrap.min.js'></script>
 	<script type='text/javascript' src='<?php echo INCLUDE_PATH;?>/js/jquery-ui-1.11.2/jquery-ui.min.js'></script>
@@ -70,7 +69,7 @@ $page_label="This is the Input Label";
     <form id="formwhatever" action="" method="post" name="form" enctype="multipart/form-data">
         <div class="form-group"> 
             <label><?php echo $page_label;?></label>
-            <textarea rows="4" cols="50" class="form-control" id="form_input"></textarea>
+            <textarea rows="4" cols="50" class="form-control" id="form_input">Type in anything...</textarea>
 
         </div>            
         <input type="submit" class="btn btn-default" value="Submit" id="submit">
@@ -79,7 +78,7 @@ $page_label="This is the Input Label";
       <a href="https://www.linkedin.com/in/pwingard">LinkedIn</a>&nbsp;&middot;&nbsp;
         <a href="http://pwingard.com">Home</a></p>
 </div>    
-    
+
     
     
     
