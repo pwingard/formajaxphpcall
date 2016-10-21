@@ -4,7 +4,13 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-define("INCLUDE_PATH", "../../twc_includes");
+
+set_include_path(get_include_path() . PATH_SEPARATOR . "/twc_includes");
+
+//echo get_include_path();
+//die();
+
+//define("INCLUDE_PATH", "../../../twc_includes");
 
 $page_title="Form Using Ajax to Call a PHP Script";
 $page_info="This form uses Bootstrap for the CSS and Ajax to call a PHP script...";
@@ -15,16 +21,17 @@ $page_label="Input";
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="shortcut icon" href="images/fave.ico" type="image/x-icon">
-        <link rel="icon" type="image/png" href="../images/fave.ico"/>
-	<link rel="stylesheet" href="<?php echo INCLUDE_PATH;?>/css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="<?php echo INCLUDE_PATH;?>/js/jquery-ui-1.11.2/jquery-ui.min.css"/>
-	<script type='text/javascript' src='<?php echo INCLUDE_PATH;?>/js/jquery-1.11.1.min.js'></script>
-	<script type='text/javascript' src='<?php echo INCLUDE_PATH;?>/js/bootstrap.min.js'></script>
-	<script type='text/javascript' src='<?php echo INCLUDE_PATH;?>/js/jquery-ui-1.11.2/jquery-ui.min.js'></script>
-        <script type='text/javascript' src='<?php echo INCLUDE_PATH;?>/js/jquery.tablesorter.min.js'></script>
-        <script type='text/javascript' src='<?php echo INCLUDE_PATH;?>/js/typeahead.jquery.min.js'></script>
+        <!--<link rel="shortcut icon" href="images/fave.ico" type="image/x-icon">-->
+        <link rel="icon" type="image/png" href="../../images/fave.ico"/>
+	<link rel="stylesheet" href="/twc_includes/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="/twc_includes/js/jquery-ui-1.11.2/jquery-ui.min.css"/>
+	<script type='text/javascript' src='/twc_includes/js/jquery-1.11.1.min.js'></script>
+	<script type='text/javascript' src='/twc_includes/js/bootstrap.min.js'></script>
+	<script type='text/javascript' src='/twc_includes/js/jquery-ui-1.11.2/jquery-ui.min.js'></script>
+        <script type='text/javascript' src='/twc_includes/js/jquery.tablesorter.min.js'></script>
+        <script type='text/javascript' src='/twc_includes/js/typeahead.jquery.min.js'></script>
         <script type='text/javascript' src='js.js'></script>
+        
 
         <style type="text/css">
             label{display: block;margin: 5px 0 10px 0;}
@@ -76,7 +83,10 @@ $page_label="Input";
     <p><a href="https://github.com/pwingard/formajaxphpcall">Git</a>&nbsp;&middot;&nbsp;
       <a href="https://www.linkedin.com/in/pwingard">LinkedIn</a>&nbsp;&middot;&nbsp;
         <a href="http://pwingard.com">Home</a></p>
-</div>    
+</div>  
+    
+</body>
+</html>
 
     
     
