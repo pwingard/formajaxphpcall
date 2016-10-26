@@ -32,7 +32,6 @@ $page_label="Input";
         <script type='text/javascript' src='/twc_includes/js/typeahead.jquery.min.js'></script>
         <script type='text/javascript' src='js.js'></script>
         
-
         <style type="text/css">
             label{display: block;margin: 5px 0 10px 0;}
             .pane { width: 900px; margin-left: auto; margin-right: auto; }
@@ -75,11 +74,19 @@ $page_label="Input";
     <form id="formwhatever" action="" method="post" name="form" enctype="multipart/form-data">
         <div class="form-group"> 
             <label><?php echo $page_label;?></label>
-            <textarea rows="4" cols="50" class="form-control" id="form_input">Type in anything...</textarea>
+            <textarea rows="4" cols="50" class="form-control" id="form_input">Type in anything...yo</textarea>
 
         </div>            
         <input type="submit" class="btn btn-default" value="Submit" id="submit">
     </form>
+    <script type='text/javascript'>
+        $('#form_input').click(function() {
+    $('#form_input').val('');
+});
+    </script>
+    
+    
+    
     <p><a href="https://github.com/pwingard/formajaxphpcall">Git</a>&nbsp;&middot;&nbsp;
       <a href="https://www.linkedin.com/in/pwingard">LinkedIn</a>&nbsp;&middot;&nbsp;
         <a href="http://pwingard.com">Home</a></p>
