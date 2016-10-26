@@ -74,7 +74,7 @@ $page_label="Input";
     <form id="formwhatever" action="" method="post" name="form" enctype="multipart/form-data">
         <div class="form-group"> 
             <label><?php echo $page_label;?></label>
-            <textarea rows="4" cols="50" class="form-control" id="form_input">Type in anything...yo</textarea>
+            <textarea rows="4" cols="50" class="form-control" id="form_input">Type in anything...</textarea>
 
         </div>            
         <input type="submit" class="btn btn-default" value="Submit" id="submit">
